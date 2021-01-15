@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "USvy1n73stQAODROupkNjxhVbzbF0uFJNzoqj/3m7HM16y1VVLV5H/48lKw0QQjYVJtW1V0wbbdMHFzrrXWioA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lucssantos\\source\\repos\\Audio_GUI\\Audio_GUI\\Audio_GUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lucssantos\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\lucssantos\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\lucssantos\\.nuget\\packages\\naudio\\1.10.0\\naudio.1.10.0.nupkg.sha512",
+    "C:\\Users\\lucssantos\\.nuget\\packages\\system.resources.extensions\\4.7.0\\system.resources.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\lucssantos\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\lucssantos\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

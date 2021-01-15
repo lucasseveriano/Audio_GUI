@@ -1,0 +1,25 @@
+﻿<Window x:Class="Audio_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Audio_GUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="313" Width="355">
+
+    <Grid>
+        <Label Content="Audio Test" HorizontalAlignment="Center" Margin="11,4,0,0" VerticalAlignment="Top" FontSize="30"/>
+        <Label Content="Audio File:" HorizontalAlignment="Left" Margin="18,66,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Open" HorizontalAlignment="Left" Margin="125,77,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+        <Label Content="Device" HorizontalAlignment="Left" Margin="18,105,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox x:Name="deviceComboBox" HorizontalAlignment="Left" Margin="16,149,0,0" VerticalAlignment="Top" Width="200"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="151,200,0,0" VerticalAlignment="Top" Width="60" Click="Button_Click_2" />
+
+        <Button Content="PLAY" Name="playButton" HorizontalAlignment="Left" Margin="15,200,0,0" VerticalAlignment="Top" Width="60" Click="playButton_Click"/>
+        <Button Content="STOP" Name="stopButton" HorizontalAlignment="Left" Margin="85,200,0,0" VerticalAlignment="Top" Width="60" Click="stopButton_Click"/>
+
+
+    </Grid>
+
+</Window>
