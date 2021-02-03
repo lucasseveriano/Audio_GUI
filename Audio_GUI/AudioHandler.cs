@@ -41,21 +41,22 @@ namespace Audio_GUI
 
         public void Play(String audiofile, int deviceNumber = -1)
         {
-            mainOutputStream = new WaveFileReader(audiofile);
+            WaveStream mainOutputStream = new WaveFileReader(audiofile);
             WaveChannel32 volumeStream = new WaveChannel32(mainOutputStream);
+
             player = new WaveOutEvent();
-            player.Init(volumeStream);
-            player.DeviceNumber = deviceNumber;
+            player.DeviceNumber = deviceNumber;         
 
-            player.Play();
+            player.Init(mainOutputStream);
 
-            while (player.PlaybackState == PlaybackState.Playing)
-            {
-                Thread.Sleep(1000);
-            }
+            //player.Play();
 
-            //Thread t = new Thread(PlayThread);
-            //t.Start();
+            //while (player.PlaybackState == PlaybackState.Playing)
+            //{
+            //    Thread.Sleep(100);
+            //} 
+            Thread t = new Thread(PlayThread);
+            t.Start();            
         }
 
         public void PlayThread()
@@ -67,8 +68,6 @@ namespace Audio_GUI
                 Thread.Sleep(1000);
             }
         }
-
-
 
         public int DeviceNameToNumber(string deviceName)
         {
